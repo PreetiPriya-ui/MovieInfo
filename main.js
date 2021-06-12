@@ -15,7 +15,7 @@
       let text = searchText.value;
       if(text != ''){
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://www.omdbapi.com/?t='+text+'&apikey=c0ab542f');
+        xhr.open('GET', 'http://www.omdbapi.com/?t='+text+'&apikey=your_api_key');
   
         xhr.onload = function(){
           if(this.status >= 200 && this.status<400){
@@ -43,7 +43,7 @@
       let text = searchText.value;
       
       if(text != ''){
-        fetch('http://www.omdbapi.com/?t='+text+'&apikey=c0ab542f')
+        fetch('http://www.omdbapi.com/?t='+text+'&apikey=your_api_key')
         .then(response => response.text())
         .then(data => {
         	data=JSON.parse(data);
