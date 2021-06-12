@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>MovieInfo</title>
+</head>
+<body>
+  <h1>Movie-Info</h1>
+   <div class="container">
+    <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+    <button id="search" onclick="getFactAjax()">Search</button>
+
+
+   </div>
+   <div id="movie_details" class="movie_details">
+    <img id="image" class="image">
+     <p id="movie_title" class="movie_title"></p>
+     <p id="actors" class="actors"></p>
+     <p id="director" class="director"></p>
+     <p id="released" class="released"></p>
+     <p id="genre" class="genre"></p>
+     <p id="writer" class="writer"></p>
+  
+   </div>
+<script src="main.js"></script>
+</body>
+</html>
